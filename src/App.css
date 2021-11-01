@@ -1,3 +1,47 @@
-.App {
-  text-align: center;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar-brand {
+  font-size: 40px;
+  padding-left: 8px;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  text-align: left;
+  padding-right: 8px;
+}
+
+li {
+  padding: 10px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: blue;
+}
+
+.nav-item:hover {
+  color: darkblue;
+}
+
+.active {
+  font-weight: bold;
+}
+
+h2 {
+  padding: 0 10px;
+}
+
+.book {
+  display: flex;
+}
+
+.book > p {
+  padding: 0 10px;
 }
