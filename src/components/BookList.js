@@ -1,17 +1,18 @@
 import React from 'react';
 import Book from './Book';
+import Form from './Form';
 
 const list = [
   {
     id: 1,
-    category: 'Tech',
-    title: 'Google Hacking',
-    author: 'Johnny Long',
-    progress: '1/12',
+    category: 'Non-fiction',
+    title: 'A Short History of Nearly Everything',
+    author: 'Bill Bryson',
+    progress: '0/6',
   },
   {
     id: 2,
-    category: 'Languages',
+    category: 'Mystery',
     title: 'Lorem Ipsum',
     author: 'Latin',
     progress: '3/42',
@@ -27,6 +28,7 @@ export default function BookList() {
           <Book key={book.id} data={book} />
         ))}
       </ul>
+      <Form />
     </>
   );
 }

@@ -1,12 +1,15 @@
+:root {
+  --blue: #0290ff;
+}
+
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px;
 }
 
 .navbar-brand {
-  font-size: 40px;
+  font-size: 30px;
+  color: var(--blue);
   padding-left: 8px;
 }
 
@@ -44,4 +47,8 @@ h2 {
 
 .book > p {
   padding: 0 10px;
+}
+
+input {
+  margin: 0 4px;
 }

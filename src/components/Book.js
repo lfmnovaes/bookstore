@@ -5,12 +5,15 @@ export default function Book({ data }) {
   return (
     <li className="book">
       <p>
+        Title:&nbsp;
         {data.title}
       </p>
       <p>
+        Author:&nbsp;
         {data.author}
       </p>
       <p>
+        Progress:&nbsp;
         {data.progress}
       </p>
     </li>
