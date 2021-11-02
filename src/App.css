@@ -47,8 +47,13 @@ h2 {
 
 .book > p {
   padding: 0 10px;
+  margin: 8px 0;
 }
 
 input {
   margin: 0 4px;
+}
+
+button {
+  margin: auto 0;
 }

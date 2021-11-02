@@ -8,14 +8,22 @@ const list = [
     category: 'Non-fiction',
     title: 'A Short History of Nearly Everything',
     author: 'Bill Bryson',
-    progress: '0/6',
+    chapter: {
+      current: 'How to build a universe',
+      progress: '0',
+      total: '6',
+    },
   },
   {
     id: 2,
     category: 'Mystery',
     title: 'Lorem Ipsum',
     author: 'Latin',
-    progress: '3/42',
+    chapter: {
+      current: 'Dolor sit amet',
+      progress: '7',
+      total: '42',
+    },
   },
 ];
 
