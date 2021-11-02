@@ -31,7 +31,7 @@ export default function Book({ data }) {
 
 Book.propTypes = {
   data: PropTypes.shape({
-    id: PropTypes.number,
+    id: PropTypes.string,
     category: PropTypes.string,
     title: PropTypes.string,
     author: PropTypes.string,

@@ -4,6 +4,8 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { store } from './redux/books/books';
 import Header from './components/Header';
 import BookList from './components/BookList';
 import Categories from './components/Categories';
@@ -15,10 +17,12 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route path="/" exact>
-            <BookList />
+          <Route path="/">
+            <Provider store={store}>
+              <BookList />
+            </Provider>
           </Route>
-          <Route path="/categories" exact>
+          <Route path="/categories">
             <Categories />
           </Route>
         </Switch>
