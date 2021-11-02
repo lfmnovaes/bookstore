@@ -10,10 +10,6 @@
 - React
 - Redux
 
-## Live Demo
-
-[Live Demo Link](https://lfmnovaes.github.io/bookstore/)
-
 ## Prerequisites
 
 Node >= 14.0.0 and npm >= 5.6 and an updated browser.
