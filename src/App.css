@@ -1,0 +1,59 @@
+:root {
+  --blue: #0290ff;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  color: var(--blue);
+  padding-left: 8px;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  text-align: left;
+  padding-right: 8px;
+}
+
+li {
+  padding: 10px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: blue;
+}
+
+.nav-item:hover {
+  color: darkblue;
+}
+
+.active {
+  font-weight: bold;
+}
+
+h2 {
+  padding: 0 10px;
+}
+
+.book {
+  display: flex;
+}
+
+.book > p {
+  padding: 0 10px;
+  margin: 8px 0;
+}
+
+input {
+  margin: 0 4px;
+}
+
+button {
+  margin: auto 0;
+}
