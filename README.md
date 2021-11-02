@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-[Live Demo Link (Heroku)](https://bookstore-lfmn.herokuapp.com/)
+[Live Demo Link (Netlify)](https://bookstore-lfmn.netlify.app/)
 
 ## Prerequisites
 
