@@ -5,7 +5,7 @@ import {
   Route,
 } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import { store } from './redux/books/books';
+import store from './redux/configureStore';
 import Header from './components/Header';
 import BookList from './components/BookList';
 import Categories from './components/Categories';

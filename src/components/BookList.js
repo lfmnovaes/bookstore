@@ -4,8 +4,8 @@ import Book from './Book';
 import Form from './Form';
 
 export default function BookList() {
-  const bookStore = useSelector((state) => state.books);
-  const list = bookStore.map(
+  const bookStore = useSelector((store) => store.booksReducer);
+  const list = bookStore.books.map(
     (book) => (
       <Book key={book.id} data={book} />
     ),
