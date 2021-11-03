@@ -10,6 +10,10 @@
 - React
 - Redux
 
+## Live Demo
+
+[Live Demo Link (Netlify)](https://bookstore-lfmn.netlify.app/)
+
 ## Prerequisites
 
 Node >= 14.0.0 and npm >= 5.6 and an updated browser.
