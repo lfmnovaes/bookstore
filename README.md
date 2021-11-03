@@ -12,7 +12,8 @@
 
 ## Live Demo
 
-[Live Demo Link (Netlify)](https://bookstore-lfmn.netlify.app/)
+[Heroku Live Demo](https://bookstore-lfmn.herokuapp.com/)
+[Netlify Live Demo](https://bookstore-lfmn.netlify.app/)
 
 ## Prerequisites
 
