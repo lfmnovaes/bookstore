@@ -12,15 +12,22 @@ const postBook = async (obj) => {
     title: obj.title,
     category: obj.category,
   };
-
-  const results = await fetch(API_URL, {
+  await fetch(API_URL, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json; charset=UTF-8',
     },
     body: JSON.stringify(tempBook),
   });
-  return results.status;
+};
+
+const deleteBook = async (id) => {
+  await fetch(`${API_URL}/${id}`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json; charset=UTF-8',
+    },
+  });
 };
 
 export const addBook = (payload) => ({
@@ -44,9 +51,9 @@ export const getBooks = () => async (dispatch) => {
     });
   values.forEach((value, index) => {
     const book = {
+      id: keys[index],
       title: value[0].title,
       category: value[0].category,
-      id: keys[index],
     };
     books.push(book);
   });
@@ -65,6 +72,7 @@ const reducer = (state = initialState, action) => {
         action.payload,
       ];
     case REMOVE_BOOK:
+      deleteBook(action.payload);
       return state.filter((book) => book.id !== action.payload);
     case GET_BOOKS:
       return action.payload;
