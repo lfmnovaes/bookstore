@@ -19,12 +19,11 @@ export default function BookList() {
   );
 
   return (
-    <>
-      <h2>List of books</h2>
+    <div className="list">
       <ul>
         {list}
       </ul>
       <Form />
-    </>
+    </div>
   );
 }

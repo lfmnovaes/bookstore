@@ -1,16 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
 :root {
-  --blue: #0290ff;
+  --azure: #0290ff;
+  --bg: #f5f6fa;
 }
 
-.navbar {
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+nav {
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   align-items: center;
+  margin-left: 100px;
 }
 
 .navbar-brand {
-  font-size: 30px;
-  color: var(--blue);
-  padding-left: 8px;
+  margin: 0.375rem 2.938rem 0.125rem 0;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--azure);
 }
 
 .navbar-nav {
@@ -18,10 +33,6 @@
   display: flex;
   text-align: left;
   padding-right: 8px;
-}
-
-li {
-  padding: 10px;
 }
 
 .nav-item {
@@ -33,21 +44,29 @@ li {
   color: darkblue;
 }
 
-.active {
-  font-weight: bold;
+.list {
+  font-family: 'Roboto', sans-serif;
+  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+  background-color: var(--bg);
 }
 
-h2 {
-  padding: 0 10px;
+ul {
+  list-style: none;
+  position: relative;
+  padding: 0;
+  gap: 30px;
+}
+
+li {
+  background-color: white;
 }
 
 .book {
-  display: flex;
+  margin: 30px 30px 30px 0;
 }
 
-.book > p {
-  padding: 0 10px;
-  margin: 8px 0;
+.active {
+  font-weight: bold;
 }
 
 input {

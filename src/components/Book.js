@@ -7,14 +7,12 @@ export default function Book({ data }) {
   const dispatch = useDispatch();
   return (
     <li className="book">
-      <p>
+      Category:&nbsp;
+      {data.category}
+      <h3>
         Title:&nbsp;
         {data.title}
-      </p>
-      <p>
-        Category:&nbsp;
-        {data.category}
-      </p>
+      </h3>
       <button type="button" onClick={() => dispatch(removeBook(data.id))}>
         Remove
       </button>
