@@ -5,7 +5,6 @@ import { removeBook } from '../redux/books/books';
 
 export default function Book({ data }) {
   const dispatch = useDispatch();
-
   return (
     <li className="book">
       <p>
@@ -13,18 +12,8 @@ export default function Book({ data }) {
         {data.title}
       </p>
       <p>
-        Author:&nbsp;
-        {data.author}
-      </p>
-      <p>
-        Chapter:&nbsp;
-        {data.chapter.current}
-      </p>
-      <p>
-        Progress:&nbsp;
-        {data.chapter.progress}
-        /
-        {data.chapter.total}
+        Category:&nbsp;
+        {data.category}
       </p>
       <button type="button" onClick={() => dispatch(removeBook(data.id))}>
         Remove
@@ -38,11 +27,5 @@ Book.propTypes = {
     id: PropTypes.string,
     category: PropTypes.string,
     title: PropTypes.string,
-    author: PropTypes.string,
-    chapter: PropTypes.shape({
-      current: PropTypes.string,
-      progress: PropTypes.string,
-      total: PropTypes.string,
-    }),
   }).isRequired,
 };
