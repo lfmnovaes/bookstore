@@ -2,7 +2,10 @@
 
 :root {
   --azure: #0290ff;
+  --blue: #4386bf;
   --bg: #f5f6fa;
+  --white: #e8e8e8;
+  --black: #121212;
 }
 
 body {
@@ -14,7 +17,9 @@ nav {
   font-family: 'Montserrat', sans-serif;
   display: flex;
   align-items: center;
-  margin-left: 100px;
+  height: 6rem;
+  padding-left: 100px;
+  border-bottom: 1px solid var(--white);
 }
 
 .navbar-brand {
@@ -62,7 +67,38 @@ li {
 }
 
 .book {
+  border-radius: 4px;
+  border: 1px solid var(--white);
   margin: 30px 30px 30px 0;
+}
+
+.content {
+  padding: 0 30px 30px 30px;
+}
+
+.category {
+  margin: 20px 0 0 0;
+}
+
+.title {
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  margin: 4px 0;
+  color: var(--black);
+}
+
+.links {
+  margin: 1rem 1rem 0.125rem 0;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: var(--blue);
+}
+
+.links a {
+  text-decoration: none;
 }
 
 .active {
