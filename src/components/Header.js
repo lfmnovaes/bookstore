@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import user from './user-svgrepo-com.svg';
 
 const Header = () => (
   <nav>
@@ -12,6 +13,7 @@ const Header = () => (
         <NavLink to="/categories">Categories</NavLink>
       </li>
     </ul>
+    <img className="user-icon" src={user} alt="user" />
   </nav>
 );
 

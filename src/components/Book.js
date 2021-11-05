@@ -16,11 +16,24 @@ export default function Book({ data }) {
         </h3>
         <div className="links">
           <a href="/#">Comments</a>
-          {' | '}
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <span className="vl" />
+          &nbsp;&nbsp;&nbsp;&nbsp;
           <a href="/#" onClick={() => dispatch(removeBook(data.id))}>Remove</a>
-          {' | '}
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <span className="vl" />
+          &nbsp;&nbsp;&nbsp;&nbsp;
           <a href="/#">Edit</a>
         </div>
+      </div>
+      <div className="completion">
+        <p>0%</p>
+        <p>Completed</p>
+      </div>
+      <div className="progress">
+        <p>CURRENT CHAPTER</p>
+        <p>Chapter 1</p>
+        <button type="button">UPDATE PROGRESS</button>
       </div>
     </li>
   );
