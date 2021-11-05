@@ -5,6 +5,10 @@ import { removeBook } from '../redux/books/books';
 
 export default function Book({ data }) {
   const dispatch = useDispatch();
+  const remove = (e, id) => {
+    e.preventDefault();
+    dispatch(removeBook(id));
+  };
   return (
     <li className="book">
       <div className="content">
@@ -19,7 +23,7 @@ export default function Book({ data }) {
           &nbsp;&nbsp;&nbsp;&nbsp;
           <span className="vl" />
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="/#" onClick={() => dispatch(removeBook(data.id))}>Remove</a>
+          <a href="/#" onClick={(e) => remove(e, data.id)}>Remove</a>
           &nbsp;&nbsp;&nbsp;&nbsp;
           <span className="vl" />
           &nbsp;&nbsp;&nbsp;&nbsp;

@@ -69,6 +69,7 @@ a:focus {
   border-radius: 50%;
   border: 1px solid var(--white);
   filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+  cursor: pointer;
 }
 
 .list {
@@ -198,4 +199,5 @@ button {
   color: var(--white);
   border-radius: 3px;
   background-color: var(--azure);
+  cursor: pointer;
 }
