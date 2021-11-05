@@ -37,7 +37,11 @@ nav {
   padding-right: 8px;
 }
 
-a, a:hover, a:active, a:visited, a:focus {
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
   text-decoration: none;
   color: var(--azure);
 }
@@ -64,7 +68,7 @@ a, a:hover, a:active, a:visited, a:focus {
   margin: 0 0 0 auto;
   border-radius: 50%;
   border: 1px solid var(--white);
-  filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg);
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
 }
 
 .list {
@@ -172,7 +176,8 @@ form > h3 {
   display: flex;
 }
 
-input, select {
+input,
+select {
   margin: 0 16px 0 0;
   padding: 5px 15px;
   border-radius: 4px;
