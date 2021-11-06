@@ -1,17 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import user from './user-svgrepo-com.svg';
 
 const Header = () => (
-  <nav className="navbar">
+  <nav>
     <h1 className="navbar-brand">Bookstore CMS</h1>
     <ul className="navbar-nav">
       <li className="nav-item">
-        <Link to="/">Books</Link>
+        <NavLink to="/">Books</NavLink>
       </li>
       <li className="nav-item">
-        <Link to="/categories">Categories</Link>
+        <NavLink to="/categories">Categories</NavLink>
       </li>
     </ul>
+    <img className="user-icon" src={user} alt="user" />
   </nav>
 );
 

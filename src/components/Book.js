@@ -5,19 +5,40 @@ import { removeBook } from '../redux/books/books';
 
 export default function Book({ data }) {
   const dispatch = useDispatch();
+  const remove = (e, id) => {
+    e.preventDefault();
+    dispatch(removeBook(id));
+  };
   return (
     <li className="book">
-      <p>
-        Title:&nbsp;
-        {data.title}
-      </p>
-      <p>
-        Category:&nbsp;
-        {data.category}
-      </p>
-      <button type="button" onClick={() => dispatch(removeBook(data.id))}>
-        Remove
-      </button>
+      <div className="content">
+        <h5 className="category">
+          {data.category}
+        </h5>
+        <h3 className="title">
+          {data.title}
+        </h3>
+        <div className="links">
+          <a href="/#">Comments</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <span className="vl" />
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="/#" onClick={(e) => remove(e, data.id)}>Remove</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <span className="vl" />
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="/#">Edit</a>
+        </div>
+      </div>
+      <div className="completion">
+        <p>0%</p>
+        <p>Completed</p>
+      </div>
+      <div className="progress">
+        <p>CURRENT CHAPTER</p>
+        <p>Chapter 1</p>
+        <button type="button">UPDATE PROGRESS</button>
+      </div>
     </li>
   );
 }

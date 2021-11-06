@@ -21,16 +21,19 @@ export default function Form() {
   };
   return (
     <form id="add-new-book">
-      <h3>Add new Book:</h3>
-      <input type="text" id="title" name="title" onChange={(e) => setTitle(e.target.value)} placeholder="Title" required />
-      <select id="category" name="category" onChange={(e) => setCategory(e.target.value)}>
-        <option value="Romance">Romance</option>
-        <option value="Mystery">Mystery</option>
-        <option value="Science Fiction">Science Fiction</option>
-        <option value="Technology">Technology</option>
-        <option value="Non-fiction">Non-fiction</option>
-      </select>
-      <input type="submit" value="Add book" onClick={addNewBook} />
+      <h3>ADD NEW BOOK:</h3>
+      <div className="container">
+        <input type="text" id="title" name="title" onChange={(e) => setTitle(e.target.value)} placeholder="Book title" required />
+        <select id="category" name="category" onChange={(e) => setCategory(e.target.value)} required>
+          <option defaultValue="">Category</option>
+          <option value="Romance">Romance</option>
+          <option value="Mystery">Mystery</option>
+          <option value="Science Fiction">Science Fiction</option>
+          <option value="Technology">Technology</option>
+          <option value="Non-fiction">Non-fiction</option>
+        </select>
+        <button type="submit" onClick={addNewBook}>ADD BOOK</button>
+      </div>
     </form>
   );
 }

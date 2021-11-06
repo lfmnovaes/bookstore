@@ -13,11 +13,11 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Router>
         <Header />
         <Switch>
-          <Route path="/">
+          <Route path="/" exact>
             <Provider store={store}>
               <BookList />
             </Provider>
