@@ -10,7 +10,7 @@ export default function BookList() {
 
   useEffect(() => {
     dispatch(getBooks());
-  }, []);
+  }, [dispatch]);
 
   const list = bookStore.map(
     (book) => (
