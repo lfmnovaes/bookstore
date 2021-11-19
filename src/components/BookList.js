@@ -4,7 +4,7 @@ import { getBooks } from '../redux/books/books';
 import Book from './Book';
 import Form from './Form';
 
-export default function BookList() {
+const BookList = () => {
   const dispatch = useDispatch();
   const bookStore = useSelector((store) => store.booksReducer);
 
@@ -26,4 +26,6 @@ export default function BookList() {
       <Form />
     </div>
   );
-}
+};
+
+export default BookList;

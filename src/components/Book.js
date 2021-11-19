@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/books';
 
-export default function Book({ data }) {
+const Book = ({ data }) => {
   const dispatch = useDispatch();
   const remove = (e, id) => {
     e.preventDefault();
@@ -41,7 +41,7 @@ export default function Book({ data }) {
       </div>
     </li>
   );
-}
+};
 
 Book.propTypes = {
   data: PropTypes.shape({
@@ -50,3 +50,5 @@ Book.propTypes = {
     category: PropTypes.string,
   }).isRequired,
 };
+
+export default Book;

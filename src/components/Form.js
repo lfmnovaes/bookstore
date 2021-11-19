@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../redux/books/books';
 
-export default function Form() {
+const Form = () => {
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('Romance');
   const chapter = { current: 'test', progress: '0', total: '42' };
@@ -36,4 +36,6 @@ export default function Form() {
       </div>
     </form>
   );
-}
+};
+
+export default Form;
