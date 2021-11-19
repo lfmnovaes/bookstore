@@ -4,6 +4,10 @@
 
 > Virtual bookstore created with React and Redux.
 
+## Preview
+
+![preview](./preview.png)
+
 ## Built With
 
 - Node.js
