@@ -1,14 +1,15 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+![](https://img.shields.io/badge/Microverse-blueviolet) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Flfmnovaes%2Fbookstore%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
 # Bookstore
 
-> Virtual bookstore created with React and Redux. (Work in Progress)
+> Virtual bookstore created with React and Redux.
 
 ## Built With
 
 - Node.js
 - React
 - Redux
+- JavaScript
 
 ## Live Demo
 
@@ -65,7 +66,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 </details>
 
-## Authors
+## Author
 
 👤 **Luís Fernando**
 
